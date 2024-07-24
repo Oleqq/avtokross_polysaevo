@@ -66,6 +66,7 @@ const otherServicesSwiper = new Swiper(".other-services-swiper", {
     simulateTouch: "false",
     watchOverflow: "true",
     spaceBetween: 32,
+    slidesPerView: 5,
     pagination: {
         el: ".other-services-swiper-pagination",
         clickable: "true",
@@ -73,10 +74,17 @@ const otherServicesSwiper = new Swiper(".other-services-swiper", {
     watchSlidesProgress: "true",
     breakpoints: {
         // when window width is >= 1200px
-        1200: {
+        1660: {
 
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+        1440: {
             slidesPerView: 3,
             spaceBetween: 32,
+        },
+        991: {
+
         },
         768: {
 
@@ -84,7 +92,7 @@ const otherServicesSwiper = new Swiper(".other-services-swiper", {
             spaceBetween: 26,
         },
         576: {
-            slidesPerView: 1.5,
+            slidesPerView: 2,
             slidesPerGroup: 1,
             spaceBetween: 24,
         },
@@ -96,4 +104,9 @@ const otherServicesSwiper = new Swiper(".other-services-swiper", {
     },
 });
 
+
+document.querySelector(".header__burger").addEventListener("click", function () {
+	document.querySelector(".header__menu--mobile").classList.toggle("visible");
+	document.querySelector(".header__burger").classList.toggle("active");
+});
 

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
+<body class="index-body">
     
     <header class="header">
         
@@ -72,10 +72,46 @@
                     </li>
                 </ul>
 
-
+                
+                
 
             </div>
 
+        </div>
+
+        <div class="header__menu--mobile">
+            <ul>
+                <li>
+                    <a href="">
+                        Об автокросее
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Как добраться?
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Программа
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Схема трассы
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        FAQ?
+                    </a>
+                </li>
+            </ul>
         </div>
 
     </header>
@@ -91,7 +127,7 @@
                     <img src="./img/svg/header-logo.svg" alt="">
                 </div>
 
-                <div class="hero__img hero__img--bg">
+                <div class="hero__img hero__img--bg desktop">
                     <svg width="613" height="452" viewBox="0 0 613 452" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_2001_6)"  id="pulsing-element">
                             <path
@@ -156,19 +192,40 @@
                         
                 </div>
 
-                <div class="hero__img hero__img--main" id="parallax-element">
+                <div class="hero__img--bg mobile">
+                    <svg width="287" height="316" viewBox="0 0 287 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1_592)">
+                        <path d="M30 32.9605V275.04C30 278.884 33.1163 282 36.9605 282C38.1018 282 39.2255 281.719 40.2328 281.183L245.861 171.652C259.991 164.125 259.991 143.875 245.861 136.348L40.2328 26.8172C39.2255 26.2806 38.1018 26 36.9605 26C33.1163 26 30 29.1163 30 32.9605Z" fill="#9AF95F"/>
+                        <path d="M25 32.9605V275.04C25 281.645 30.3549 287 36.9605 287C38.9216 287 40.8526 286.518 42.5835 285.596L248.212 176.065C265.874 166.657 265.874 141.343 248.212 131.935L42.5835 22.4042C40.8526 21.4822 38.9216 21 36.9605 21C30.3549 21 25 26.3549 25 32.9605Z" stroke="#00308C" stroke-width="10"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_1_592" x="0" y="0" width="286.458" height="316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="10"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.0829241 0 0 0 0 0.0796875 0 0 0 0 0.125 0 0 0 1 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_592"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_592" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                        
+                </div>
+
+                <div class="hero__img hero__img--main" id="parallax-element2">
 
                     <img src="./img/hero-car.png" alt="">
 
                 </div>
 
-                <div class="hero__blob--1">
+                <div class="hero__blob--1 desktop">
                     <svg width="342" height="652" viewBox="0 0 342 652" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M530 245.56C530 345.581 458.469 756.947 203.857 626.798C91.807 532.256 137.934 481.477 109.315 309.406C91.3119 201.165 -72.2656 70.5952 37.783 -64.465C224.865 -294.067 530 145.539 530 245.56Z" fill="#00308C"/>
                     </svg>    
                 </div>
 
-                <div class="hero__blob--2">
+                <div class="hero__blob--2 desktop">
 
                     <div class="hero__date">
                         <a href="">
@@ -187,9 +244,30 @@
                      </svg>     
                 </div>
 
+
+                <div class="hero__blob--1 mobile">
+                    <svg width="194" height="233" viewBox="0 0 194 233" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M194 111.9C194 141.701 167.817 264.269 74.6192 225.491C33.6048 197.322 50.4889 182.192 40.0133 130.923C33.4236 98.6719 -26.4519 59.7681 13.83 19.5264C82.3092 -48.8845 194 82.098 194 111.9Z" fill="#00308C"/>
+                    </svg>
+                </div>
+
+                <div class="hero__blob--2 mobile">
+                    <svg width="269" height="376" viewBox="0 0 269 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M269 89.5388C269.015 182.354 241.476 423.64 107.372 367.681C48.355 327.032 72.65 305.2 57.5763 231.217C48.0942 184.678 -38.0625 128.538 19.9004 70.4681C118.437 -28.2509 268.981 -24.4707 269 89.5388Z" fill="#00308C"/>
+                    </svg>                        
+                </div>
+
+                <div class="hero__blob--3 mobile">
+
+                    <svg width="269" height="376" viewBox="0 0 269 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M269 89.5388C269.015 182.354 241.476 423.64 107.372 367.681C48.355 327.032 72.65 305.2 57.5763 231.217C48.0942 184.678 -38.0625 128.538 19.9004 70.4681C118.437 -28.2509 268.981 -24.4707 269 89.5388Z" fill="#00308C"/>
+                    </svg>
+                        
+
+                </div>
                 
 
-                <h1 id="parallax-element">
+                <h1 id="parallax-element2">
                     АВТОКРОСС ПОЛЫСАЕВО
                 </h1>
 
@@ -197,6 +275,12 @@
 
                     УЧАСТВОВАТЬ
 
+                </div>
+
+                <div class="hero__date-mobile">
+                    <p>
+                        ГОРА КРУТАЯ, ПОЛЫСАЕВО, 23-25 августа
+                    </p>
                 </div>
 
                 <div class="hero__tips">
@@ -301,6 +385,26 @@
 
         <section class="about-index">
 
+            <div class="about-index__blob--1">
+                <svg width="530" height="641" viewBox="0 0 530 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M529.767 309.875C529.767 391.337 458.267 726.375 203.767 620.375C91.7666 543.375 137.873 502.018 109.267 361.875C91.2717 273.718 -72.2338 167.375 37.7663 57.375C224.766 -129.625 529.767 228.413 529.767 309.875Z" fill="#0038A5"/>
+                    <g filter="url(#filter0_d_30_1195)">
+                    <path d="M427 33L196 204" stroke="#00308C" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_30_1195" x="160.999" y="-0.00146484" width="301.003" height="241.003" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="5"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.0829241 0 0 0 0 0.0796875 0 0 0 0 0.125 0 0 0 1 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_30_1195"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_30_1195" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+            </div>
+
             <div class="container about-index__container">
                 
                 <div class="about-index__wrapper">
@@ -327,177 +431,85 @@
 
                 </div>
 
+                <div class="about-index__img">
+                    <picture>
+                        <source srcset="./img/svg/route-arrows-laptop.svg" media="(max-width: 991px)">
+                        <img src="./img/svg/route-arrows.svg" alt="">
+                    </picture>
+                    
+                </div>
+
             </div>
 
         </section>
 
-        <section class="faq">
+        <section class="map-index">
 
-            <div class="faq__blob--1">
-                <svg width="482" height="504" viewBox="0 0 482 504" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M-180.7 451.171C-334.038 365.154 -501.739 182.788 -284.751 12.7218C-162.791 -47.2672 38.6897 125.128 174.903 168.765C260.589 196.215 433.344 105.67 475.439 255.43C547 510.022 7.65241 556.829 -180.7 451.171Z" fill="#00308C" />
-                </svg>
+            <div style="position: relative; overflow: hidden;">
+                <a href="https://yandex.ru/maps/org/krossovaya_trassa_bolshaya_gora/40350566742/?utm_medium=mapframe&utm_source=maps" style="color: #eee; font-size: 12px; position: absolute; top: 0px;">Кроссовая трасса Большая Гора</a>
+                <a href="https://yandex.ru/maps/11292/polysaevo/category/motordrome/214421065055/?utm_medium=mapframe&utm_source=maps" style="color: #eee; font-size: 12px; position: absolute; top: 14px;">Автодром в Полысаево</a>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=86.278491%2C54.594347&mode=poi&poi%5Bpoint%5D=86.273995%2C54.592984&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D40350566742&utm_source=share&z=16.24"
+                    width="100%"
+                    height="700"
+                    frameborder="1"
+                    allowfullscreen="true"
+                    style="position: relative;"
+                ></iframe>
             </div>
+            
+        </section>
 
-            <div class="container faq__container">
+        <section class="buttons-index">
 
-                <h2>
-                    ВОПРОС И ОТВЕТ
-                </h2>
+            <div class="container">
 
-                <div class="faq__wrapper">
+                <div class="buttons-index__wrapper">
 
-                    <div class="faq-question__list">
+                    <div class="ui-button blue">
 
-                        <div class="faq-question__list--item active">
+                        <a href="">
+                            РЕГЛАМЕНТ
+                        </a>
 
-                            <span>1</span>
+                    </div>                    
 
-                            <h6>
-                                Вопрос 1
-                            </h6>
 
-                        </div>
+                    <div class="ui-button red">
 
-                        <div class="faq-question__list--item">
+                        <a href="">
+                            РЕГЛАМЕНТ
+                        </a>
 
-                            <span>2</span>
-
-                            <h6>
-                                Вопрос 2
-                            </h6>
-
-                        </div>
-
-                        <div class="faq-question__list--item">
-
-                            <span>3</span>
-
-                            <h6>
-                                Вопрос 3
-                            </h6>
-
-                        </div>
-
-                        <div class="faq-question__list--item">
-
-                            <span>4</span>
-
-                            <h6>
-                                Вопрос 4
-                            </h6>
-
-                        </div>
-
-                        <div class="faq-question__list--item">
-
-                            <span>5</span>
-
-                            <h6>
-                                Вопрос 5
-                            </h6>
-
-                        </div>
-
-                    </div>
-
-                    <div class="faq-question__answer">
-
-                        <div class="faq-question__answer--block faq-question__answer--1  active">
-
-                            <div class="faq-question__answer--badge">
-                                <span>1</span>
-                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
-                                </svg>
-                            </div>
-
-                            <h6>
-                                Вопрос 1
-                            </h6>
-                            <p>
-                                Ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
-                            </p>
-                        </div>
-
-                        <div class="faq-question__answer--block faq-question__answer--2">
-
-                            <div class="faq-question__answer--badge">
-                                <span>2</span>
-                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
-                                </svg>
-                            </div>
-
-                            <h6>
-                                Вопрос 2
-                            </h6>
-                            <p>
-                                Ответ 2, ответ 2, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
-                            </p>
-                        </div>
-
-                        <div class="faq-question__answer--block faq-question__answer--3">
-
-                            <div class="faq-question__answer--badge">
-                                <span>3</span>
-                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
-                                </svg>
-                            </div>
-
-                            <h6>
-                                Вопрос 3
-                            </h6>
-                            <p>
-                                Ответ 3, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
-                            </p>
-                        </div>
-
-                        <div class="faq-question__answer--block faq-question__answer--4">
-
-                            <div class="faq-question__answer--badge">
-                                <span>4</span>
-                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
-                                </svg>
-                            </div>
-
-                            <h6>
-                                Вопрос4
-                            </h6>
-                            <p>
-                                Ответ 4, ответ 2, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
-                            </p>
-                        </div>
-
-                        <div class="faq-question__answer--block faq-question__answer--5">
-
-                            <div class="faq-question__answer--badge">
-                                <span>5</span>
-                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
-                                </svg>
-                            </div>
-
-                            <h6>
-                                Вопрос 5
-                            </h6>
-                            <p>
-                                Ответ 5, ответ 2, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
-                            </p>
-                        </div>
-
-                    </div>
+                    </div>                    
 
                 </div>
 
-                
-                    
+            </div>
+
+            <div class="buttons-index__blob--1">
+                <svg width="511" height="713" viewBox="0 0 511 713" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M510.5 169.61C510.529 345.427 458.267 802.485 203.767 696.485C91.7666 619.485 137.873 578.128 109.267 437.985C91.2717 349.828 -72.2338 243.485 37.7663 133.485C224.766 -53.5147 510.464 -46.3539 510.5 169.61Z" fill="#0038A5"/>
+                    <g filter="url(#filter0_d_30_1194)">
+                    <path d="M345.992 409.2L280.007 322.279C275.437 316.258 267.863 313.329 260.431 314.707L167.997 331.846" stroke="#00308C" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_30_1194" x="136.993" y="285.371" width="240" height="156.831" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="5"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.0829241 0 0 0 0 0.0796875 0 0 0 0 0.125 0 0 0 1 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_30_1194"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_30_1194" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                                    
             </div>
 
         </section>
-        
+
         <section class="news-index">
 
             <div class="container">
@@ -514,6 +526,7 @@
 
                             <div class="swiper-slide">
 
+                               <a href="">
                                 <div class="news-index__slider__img">
 
                                     <img src="https://via.placeholder.com/320x320" alt="">
@@ -533,19 +546,22 @@
                                     
 
                                 </div>
+                               </a>
 
                                 <div class="news-index__slider__text">
 
-                                    <h5>
+                                    <a href="">
                                         Заголовок новости
-                                    </h5>
+                                    </a>
 
                                     <p>
                                         Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
                                     </p>
 
                                     <div class="more-link">
-                                        Подробнее >
+                                        <a href="">
+                                            Подробнее >
+                                        </a>
                                     </div>
 
                                 </div>
@@ -555,291 +571,318 @@
 
                             <div class="swiper-slide">
 
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости Заголовок новости
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости 2
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="swiper-slide">
-
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости 3
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости 3
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
+                                <a href="">
+                                 <div class="news-index__slider__img">
+ 
+                                     <img src="https://via.placeholder.com/320x320" alt="">
+                                 
+                                     <div class="news-index__slider__img--title">
+                                        <h5>
+                                         Заголовок новости
+                                        </h5>
+                                     </div>
+ 
+                                     <div class="news-index__slider__img--badge">
+                                         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                             <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                           </svg>
+                                     </div>
+                                     
+ 
+                                 </div>
+                                </a>
+ 
+                                 <div class="news-index__slider__text">
+ 
+                                     <a href="">
+                                         Заголовок новости
+                                     </a>
+ 
+                                     <p>
+                                         Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                     </p>
+ 
+                                     <div class="more-link">
+                                         <a href="">
+                                             Подробнее >
+                                         </a>
+                                     </div>
+ 
+                                 </div>
+ 
+ 
                             </div>
                             
                             <div class="swiper-slide">
 
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости 4 
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости 4
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
+                                <a href="">
+                                 <div class="news-index__slider__img">
+ 
+                                     <img src="https://via.placeholder.com/320x320" alt="">
+                                 
+                                     <div class="news-index__slider__img--title">
+                                        <h5>
+                                         Заголовок новости
+                                        </h5>
+                                     </div>
+ 
+                                     <div class="news-index__slider__img--badge">
+                                         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                             <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                           </svg>
+                                     </div>
+                                     
+ 
+                                 </div>
+                                </a>
+ 
+                                 <div class="news-index__slider__text">
+ 
+                                     <a href="">
+                                         Заголовок новости
+                                     </a>
+ 
+                                     <p>
+                                         Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                     </p>
+ 
+                                     <div class="more-link">
+                                         <a href="">
+                                             Подробнее >
+                                         </a>
+                                     </div>
+ 
+                                 </div>
+ 
+ 
+                            </div>
+ 
+                            <div class="swiper-slide">
+ 
+                                 <a href="">
+                                  <div class="news-index__slider__img">
+  
+                                      <img src="https://via.placeholder.com/320x320" alt="">
+                                  
+                                      <div class="news-index__slider__img--title">
+                                         <h5>
+                                          Заголовок новости
+                                         </h5>
+                                      </div>
+  
+                                      <div class="news-index__slider__img--badge">
+                                          <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                              <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                            </svg>
+                                      </div>
+                                      
+  
+                                  </div>
+                                 </a>
+  
+                                  <div class="news-index__slider__text">
+  
+                                      <a href="">
+                                          Заголовок новости
+                                      </a>
+  
+                                      <p>
+                                          Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                      </p>
+  
+                                      <div class="more-link">
+                                          <a href="">
+                                              Подробнее >
+                                          </a>
+                                      </div>
+  
+                                  </div>
+  
+  
                             </div>
 
                             <div class="swiper-slide">
 
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="swiper-slide">
-
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости Заголовок новости
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости 2
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="swiper-slide">
-
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости 3
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости 3
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            
-                            <div class="swiper-slide">
-
-                                <div class="news-index__slider__img">
-
-                                    <img src="https://via.placeholder.com/320x320" alt="">
-                                
-                                    <div class="news-index__slider__img--title">
-                                       <h5>
-                                        Заголовок новости 4 
-                                       </h5>
-                                    </div>
-
-                                    <div class="news-index__slider__img--badge">
-                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
-                                            <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
-                                          </svg>
-                                    </div>
-                                    
-
-                                </div>
-
-                                <div class="news-index__slider__text">
-
-                                    <h5>
-                                        Заголовок новости 4
-                                    </h5>
-
-                                    <p>
-                                        Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
-                                    </p>
-
-                                    <div class="more-link">
-                                        Подробнее >
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            
+                                <a href="">
+                                 <div class="news-index__slider__img">
+ 
+                                     <img src="https://via.placeholder.com/320x320" alt="">
+                                 
+                                     <div class="news-index__slider__img--title">
+                                        <h5>
+                                         Заголовок новости
+                                        </h5>
+                                     </div>
+ 
+                                     <div class="news-index__slider__img--badge">
+                                         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                             <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                           </svg>
+                                     </div>
+                                     
+ 
+                                 </div>
+                                </a>
+ 
+                                 <div class="news-index__slider__text">
+ 
+                                     <a href="">
+                                         Заголовок новости
+                                     </a>
+ 
+                                     <p>
+                                         Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                     </p>
+ 
+                                     <div class="more-link">
+                                         <a href="">
+                                             Подробнее >
+                                         </a>
+                                     </div>
+ 
+                                 </div>
+ 
+ 
+                             </div>
+ 
+                             <div class="swiper-slide">
+ 
+                                 <a href="">
+                                  <div class="news-index__slider__img">
+  
+                                      <img src="https://via.placeholder.com/320x320" alt="">
+                                  
+                                      <div class="news-index__slider__img--title">
+                                         <h5>
+                                          Заголовок новости
+                                         </h5>
+                                      </div>
+  
+                                      <div class="news-index__slider__img--badge">
+                                          <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                              <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                            </svg>
+                                      </div>
+                                      
+  
+                                  </div>
+                                 </a>
+  
+                                  <div class="news-index__slider__text">
+  
+                                      <a href="">
+                                          Заголовок новости
+                                      </a>
+  
+                                      <p>
+                                          Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                      </p>
+  
+                                      <div class="more-link">
+                                          <a href="">
+                                              Подробнее >
+                                          </a>
+                                      </div>
+  
+                                  </div>
+  
+  
+                             </div>
+                             
+                             <div class="swiper-slide">
+ 
+                                 <a href="">
+                                  <div class="news-index__slider__img">
+  
+                                      <img src="https://via.placeholder.com/320x320" alt="">
+                                  
+                                      <div class="news-index__slider__img--title">
+                                         <h5>
+                                          Заголовок новости
+                                         </h5>
+                                      </div>
+  
+                                      <div class="news-index__slider__img--badge">
+                                          <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                              <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                            </svg>
+                                      </div>
+                                      
+  
+                                  </div>
+                                 </a>
+  
+                                  <div class="news-index__slider__text">
+  
+                                      <a href="">
+                                          Заголовок новости
+                                      </a>
+  
+                                      <p>
+                                          Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                      </p>
+  
+                                      <div class="more-link">
+                                          <a href="">
+                                              Подробнее >
+                                          </a>
+                                      </div>
+  
+                                  </div>
+  
+  
+                             </div>
+  
+                             <div class="swiper-slide">
+  
+                                  <a href="">
+                                   <div class="news-index__slider__img">
+   
+                                       <img src="https://via.placeholder.com/320x320" alt="">
+                                   
+                                       <div class="news-index__slider__img--title">
+                                          <h5>
+                                           Заголовок новости
+                                          </h5>
+                                       </div>
+   
+                                       <div class="news-index__slider__img--badge">
+                                           <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                               <circle cx="27.5" cy="27.5" r="27.5" fill="#9AF95F" />
+                                               <path d="M24.9999 28V18L34.9998 28L24.9999 38V28Z" fill="white" />
+                                             </svg>
+                                       </div>
+                                       
+   
+                                   </div>
+                                  </a>
+   
+                                   <div class="news-index__slider__text">
+   
+                                       <a href="">
+                                           Заголовок новости
+                                       </a>
+   
+                                       <p>
+                                           Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок,Текстовый блок
+                                       </p>
+   
+                                       <div class="more-link">
+                                           <a href="">
+                                               Подробнее >
+                                           </a>
+                                       </div>
+   
+                                   </div>
+   
+   
+                             </div>
                             
                         </div>
 
@@ -964,6 +1007,10 @@
                                 <img src="https://via.placeholder.com/320x320" alt="">
                             </div>
 
+                            <div class="gallery-index__gallery--img mobile">
+                                <img src="https://via.placeholder.com/320x320" alt="">
+                            </div>
+
                         </div>
 
 
@@ -1057,7 +1104,7 @@
             </div>
 
         </section>
-
+        
         <section class="links-section">
 
             <div class="container links-section">
@@ -1254,6 +1301,174 @@
 
         </section>
 
+        <section class="faq">
+
+            <div class="faq__blob--1">
+                <svg width="482" height="504" viewBox="0 0 482 504" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-180.7 451.171C-334.038 365.154 -501.739 182.788 -284.751 12.7218C-162.791 -47.2672 38.6897 125.128 174.903 168.765C260.589 196.215 433.344 105.67 475.439 255.43C547 510.022 7.65241 556.829 -180.7 451.171Z" fill="#00308C" />
+                </svg>
+            </div>
+
+            <div class="container faq__container">
+
+                <h2>
+                    ВОПРОС И ОТВЕТ
+                </h2>
+
+                <div class="faq__wrapper">
+
+                    <div class="faq-question__list">
+
+                        <div class="faq-question__list--item active">
+
+                            <span>1</span>
+
+                            <h6>
+                                Вопрос 1
+                            </h6>
+
+                        </div>
+
+                        <div class="faq-question__list--item">
+
+                            <span>2</span>
+
+                            <h6>
+                                Вопрос 2
+                            </h6>
+
+                        </div>
+
+                        <div class="faq-question__list--item">
+
+                            <span>3</span>
+
+                            <h6>
+                                Вопрос 3
+                            </h6>
+
+                        </div>
+
+                        <div class="faq-question__list--item">
+
+                            <span>4</span>
+
+                            <h6>
+                                Вопрос 4
+                            </h6>
+
+                        </div>
+
+                        <div class="faq-question__list--item">
+
+                            <span>5</span>
+
+                            <h6>
+                                Вопрос 5
+                            </h6>
+
+                        </div>
+
+                    </div>
+
+                    <div class="faq-question__answer">
+
+                        <div class="faq-question__answer--block faq-question__answer--1  active">
+
+                            <div class="faq-question__answer--badge">
+                                <span>1</span>
+                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
+                                </svg>
+                            </div>
+
+                            <h6>
+                                Вопрос 1
+                            </h6>
+                            <p>
+                                Ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
+                            </p>
+                        </div>
+
+                        <div class="faq-question__answer--block faq-question__answer--2">
+
+                            <div class="faq-question__answer--badge">
+                                <span>2</span>
+                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
+                                </svg>
+                            </div>
+
+                            <h6>
+                                Вопрос 2
+                            </h6>
+                            <p>
+                                Ответ 2, ответ 2, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
+                            </p>
+                        </div>
+
+                        <div class="faq-question__answer--block faq-question__answer--3">
+
+                            <div class="faq-question__answer--badge">
+                                <span>3</span>
+                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
+                                </svg>
+                            </div>
+
+                            <h6>
+                                Вопрос 3
+                            </h6>
+                            <p>
+                                Ответ 3, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
+                            </p>
+                        </div>
+
+                        <div class="faq-question__answer--block faq-question__answer--4">
+
+                            <div class="faq-question__answer--badge">
+                                <span>4</span>
+                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
+                                </svg>
+                            </div>
+
+                            <h6>
+                                Вопрос4
+                            </h6>
+                            <p>
+                                Ответ 4, ответ 2, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
+                            </p>
+                        </div>
+
+                        <div class="faq-question__answer--block faq-question__answer--5">
+
+                            <div class="faq-question__answer--badge">
+                                <span>5</span>
+                                <svg width="88" height="158" viewBox="0 0 88 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M88 5C88 2.23857 85.7614 0 83 0H5C2.23858 0 0 2.23858 0 5V108.619C0 110.418 0.966576 112.078 2.53105 112.967L80.5311 157.259C83.8643 159.152 88 156.744 88 152.911V5Z" fill="#9AF95F" />
+                                </svg>
+                            </div>
+
+                            <h6>
+                                Вопрос 5
+                            </h6>
+                            <p>
+                                Ответ 5, ответ 2, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1, ответ 1,
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                    
+            </div>
+
+        </section>
+        
+
     </main>
 
     <footer class="footer">
@@ -1321,7 +1536,9 @@ function parallax(event) {
 
 </script>
 
+<script>
 
+</script>
 
 <script>
     // faq js
