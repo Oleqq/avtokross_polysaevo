@@ -763,12 +763,14 @@ ul {
 }
 @media (max-width: 468px) {
   .hero__img--main {
-    width: 300px;
+    width: 300px !important;
+    right: 21% !important;
+    top: 16% !important;
   }
 }
 @media (max-width: 390px) {
   .hero__img--main {
-    right: 14%;
+    right: 14% !important;
   }
 }
 @media (max-height: 800px) {
@@ -1278,6 +1280,11 @@ ul {
   position: relative;
   padding: 130px 0;
 }
+@media (max-width: 567px) {
+  .buttons-index {
+    padding: 62px 0 0;
+  }
+}
 .buttons-index__blob--1 {
   position: absolute;
   left: -17%;
@@ -1317,6 +1324,16 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 32px;
+}
+@media (max-width: 467px) {
+  .buttons-index__wrapper {
+    gap: 16px;
+  }
+}
+@media (max-width: 374px) {
+  .buttons-index__wrapper {
+    flex-direction: column;
+  }
 }
 
 .faq {
@@ -1699,6 +1716,7 @@ ul {
   .roadmap__img--map img {
     height: 1500px;
     width: 2000px;
+    object-position: -500px;
   }
 }
 .roadmap__img--badge {
@@ -1771,7 +1789,13 @@ ul {
 }
 @media (max-width: 567px) {
   .gallery-index__block--mark {
-    top: -15%;
+    top: -7%;
+  }
+}
+@media (max-width: 467px) {
+  .gallery-index__block--mark {
+    top: -9%;
+    right: 14%;
   }
 }
 @media (max-width: 1280px) {
