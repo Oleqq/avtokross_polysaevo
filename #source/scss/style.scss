@@ -308,11 +308,7 @@
             //     right: 34%;
                 
             // }
-            @media (max-height:800px) {
-                width: 567px;
-                height: 279px;
-                top: 22%;
-            }
+            
             // @media (max-height:800px) {
             //     right: 35%;
             // }
@@ -340,10 +336,7 @@
             // @media (max-height:899px) {
             //     top: 12%;
             // }
-            @media (max-height:800px) {
-                top: 8%;
-                right: -3%;
-            }
+            
             @media (max-width:568px) {
                 left: 31%;
                 top: 4%;
@@ -356,7 +349,7 @@
                     width: 500px;
                 }
                 @media (max-height:800px) {
-                    width: 400px;
+                    width: 500px;
                 }
                 @media (max-width:768px) {
                     width: 400px;
@@ -430,6 +423,9 @@
             bottom: -200px;
             z-index: 10;
 
+            @media (max-width:1099px) {
+                left: -104px;
+            }
             // @media (max-height:899px) {
             //     left: -92px;
             // }
@@ -494,7 +490,10 @@
         // @media (max-height:899px) {
         //     left: -14px;
         // }
-        
+        @media (max-width:1099px) {
+            left: -12px;
+        }
+
         p {
             font-family: var(--font-family);
             font-weight: 400;
@@ -656,9 +655,9 @@
             gap: 24px;
         }
 
-        @media (max-height:899px) {
-            bottom: 42px;
-        }
+        // @media (max-height:899px) {
+        //     bottom: 42px;
+        // }
 
 
         &--tip {
@@ -716,7 +715,7 @@
             position: absolute;
 
             right: 62px;
-            bottom: 187px;
+            bottom: 10%;
 
             display: flex;
             gap: 24px;
@@ -731,9 +730,7 @@
                 justify-content: center;
                 bottom: 160px;
             }
-            @media (max-height:700px) {
-                bottom: 187px;
-            }
+
             @media (max-width:768px) {
                 bottom: 6% !important;
             }
