@@ -205,14 +205,17 @@
     background: #0038a5;
     position: relative;
 
-    height: 100dvh;
+    height: 900px;
+
 
     @media (max-width:1099px) {
         height: 1000px;
     }
 
+
     &__container {
-        height: 100dvh;
+        height: 900px;
+
 
         @media (max-width:1099px) {
             height: 1000px;
@@ -713,7 +716,7 @@
             position: absolute;
 
             right: 62px;
-            bottom: 82px;
+            bottom: 187px;
 
             display: flex;
             gap: 24px;
@@ -729,7 +732,7 @@
                 bottom: 160px;
             }
             @media (max-height:700px) {
-                bottom: 138px;
+                bottom: 187px;
             }
             @media (max-width:768px) {
                 bottom: 6% !important;

@@ -84,7 +84,7 @@ const otherServicesSwiper = new Swiper(".other-services-swiper", {
             spaceBetween: 32,
         },
         991: {
-
+            slidesPerView: 3,
         },
         768: {
 
@@ -105,8 +105,96 @@ const otherServicesSwiper = new Swiper(".other-services-swiper", {
 });
 
 
+
+// скрипт бургера
 document.querySelector(".header__burger").addEventListener("click", function () {
 	document.querySelector(".header__menu--mobile").classList.toggle("visible");
 	document.querySelector(".header__burger").classList.toggle("active");
 });
 
+
+
+// скрипт модалки с видео
+document.addEventListener("DOMContentLoaded", function() {
+    var videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+    var videoPlayer = document.getElementById('videoPlayer');
+    var videoSource = document.getElementById('videoSource');
+    
+    document.querySelector('.hero__video-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var videoUrl = this.getAttribute('data-video-url');
+      videoSource.src = videoUrl;
+      videoPlayer.load(); // Загружаем новое видео
+      videoModal.show(); // Показываем модальное окно
+    });
+
+    // Очищаем видео источник при закрытии модального окна
+    document.getElementById('videoModal').addEventListener('hidden.bs.modal', function() {
+      videoPlayer.pause(); // Останавливаем воспроизведение видео
+      videoSource.src = ''; // Очищаем источник видео
+    });
+});
+
+
+// скрипт модалки с новостью
+document.addEventListener('DOMContentLoaded', function() {
+    var newsItems = document.querySelectorAll('.swiper-slide');
+    var newsContent = document.getElementById('newsContent');
+    var newsImage = document.getElementById('newsImage');
+    var newsModalLabel = document.getElementById('newsModalLabel');
+
+    newsItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            var content = this.querySelector('.news-index__slider__text p').textContent;
+            var imageSrc = this.querySelector('.news-index__slider__img img').src;
+            var title = this.querySelector('.news-index__slider__img--title h5').textContent;
+
+            newsContent.textContent = content;
+            newsImage.src = imageSrc;
+            newsModalLabel.textContent = title;
+        });
+    });
+});
+
+// скрипт показать фото
+document.addEventListener('DOMContentLoaded', function() {
+    var visibleCount = window.innerWidth < 767 ? 4 : 3; // Начальное количество видимых элементов
+    var increment = window.innerWidth < 767 ? 2 : 3; // Начальное количество видимых элементов;
+  
+    var items = document.querySelectorAll('.gallery-index__gallery--img');
+  
+    // Делаем видимыми первые элементы в зависимости от visibleCount
+    for (var i = 0; i < visibleCount && i < items.length; i++) {
+      items[i].classList.add('visible');
+    }
+  
+    var button = document.querySelector('.ui-button.red.gallery-button-more');
+    button.addEventListener('click', function() {
+      for (var i = visibleCount; i < visibleCount + increment && i < items.length; i++) {
+        items[i].classList.add('visible');
+      }
+      visibleCount += increment;
+    });
+  });
+  
+
+  // faq js
+  document.addEventListener('DOMContentLoaded', function () {
+    const questionItems = document.querySelectorAll('.faq-question__list--item');
+    const answerItems = document.querySelectorAll('.faq-question__answer > div');
+
+    questionItems.forEach((item, index) => {
+        item.addEventListener('click', function () {
+            // Удаляем класс active у всех вопросов
+            questionItems.forEach(q => q.classList.remove('active'));
+            // Устанавливаем класс active у текущего вопроса
+            this.classList.add('active');
+
+            // Скрываем все ответы
+            answerItems.forEach(answer => answer.classList.remove('active'));
+
+            // Показываем соответствующий ответ
+            answerItems[index].classList.add('active');
+        });
+    });
+});

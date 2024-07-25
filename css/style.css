@@ -682,7 +682,7 @@ ul {
 .hero {
   background: #0038a5;
   position: relative;
-  height: 100dvh;
+  height: 900px;
 }
 @media (max-width: 1099px) {
   .hero {
@@ -690,7 +690,7 @@ ul {
   }
 }
 .hero__container {
-  height: 100dvh;
+  height: 900px;
 }
 @media (max-width: 1099px) {
   .hero__container {
@@ -1144,7 +1144,7 @@ ul {
 .hero__video-link {
   position: absolute;
   right: 62px;
-  bottom: 82px;
+  bottom: 187px;
   display: flex;
   gap: 24px;
   z-index: 120;
@@ -1161,7 +1161,7 @@ ul {
 }
 @media (max-height: 700px) {
   .hero__video-link {
-    bottom: 138px;
+    bottom: 187px;
   }
 }
 @media (max-width: 768px) {

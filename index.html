@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1592,33 +1592,6 @@ function parallax(event) {
 
 </script>
 
-<script>
-
-</script>
-
-<script>
-    // faq js
-    document.addEventListener('DOMContentLoaded', function () {
-        const questionItems = document.querySelectorAll('.faq-question__list--item');
-        const answerItems = document.querySelectorAll('.faq-question__answer > div');
-
-        questionItems.forEach((item, index) => {
-            item.addEventListener('click', function () {
-                // Удаляем класс active у всех вопросов
-                questionItems.forEach(q => q.classList.remove('active'));
-                // Устанавливаем класс active у текущего вопроса
-                this.classList.add('active');
-
-                // Скрываем все ответы
-                answerItems.forEach(answer => answer.classList.remove('active'));
-
-                // Показываем соответствующий ответ
-                answerItems[index].classList.add('active');
-            });
-        });
-    });
-</script>
-
 
 <!-- swiper js -->
 <script src="./js/swiper-bundle.min.js"></script>
@@ -1633,32 +1606,7 @@ function parallax(event) {
 <script src="./js/front.js"></script>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var visibleCount = window.innerWidth < 767 ? 4 : 3; // Начальное количество видимых элементов
-  var increment = window.innerWidth < 767 ? 2 : 3; // Начальное количество видимых элементов;
 
-  var items = document.querySelectorAll('.gallery-index__gallery--img');
-
-  // Делаем видимыми первые элементы в зависимости от visibleCount
-  for (var i = 0; i < visibleCount && i < items.length; i++) {
-    items[i].classList.add('visible');
-  }
-
-  var button = document.querySelector('.ui-button.red.gallery-button-more');
-  button.addEventListener('click', function() {
-    for (var i = visibleCount; i < visibleCount + increment && i < items.length; i++) {
-      items[i].classList.add('visible');
-    }
-    visibleCount += increment;
-  });
-});
-
-
-
-
-
-</script>
 
 <!-- Video Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -1699,50 +1647,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var newsItems = document.querySelectorAll('.swiper-slide');
-        var newsContent = document.getElementById('newsContent');
-        var newsImage = document.getElementById('newsImage');
-        var newsModalLabel = document.getElementById('newsModalLabel');
 
-        newsItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                var content = this.querySelector('.news-index__slider__text p').textContent;
-                var imageSrc = this.querySelector('.news-index__slider__img img').src;
-                var title = this.querySelector('.news-index__slider__img--title h5').textContent;
-
-                newsContent.textContent = content;
-                newsImage.src = imageSrc;
-                newsModalLabel.textContent = title;
-            });
-        });
-    });
-</script>
-
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
-      var videoPlayer = document.getElementById('videoPlayer');
-      var videoSource = document.getElementById('videoSource');
-      
-      document.querySelector('.hero__video-link').addEventListener('click', function(e) {
-        e.preventDefault();
-        var videoUrl = this.getAttribute('data-video-url');
-        videoSource.src = videoUrl;
-        videoPlayer.load(); // Загружаем новое видео
-        videoModal.show(); // Показываем модальное окно
-      });
-  
-      // Очищаем видео источник при закрытии модального окна
-      document.getElementById('videoModal').addEventListener('hidden.bs.modal', function() {
-        videoPlayer.pause(); // Останавливаем воспроизведение видео
-        videoSource.src = ''; // Очищаем источник видео
-      });
-    });
-  </script>
 
 
 </body>
