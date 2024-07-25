@@ -274,11 +274,11 @@
                     АВТОКРОСС ПОЛЫСАЕВО
                 </h1>
 
-                <div class="cta-button primary">
+                <a href="#docs" class="cta-button primary">
 
                     УЧАСТВОВАТЬ
 
-                </div>
+                </a>
 
                 <div class="hero__date-mobile">
                     <p>
@@ -369,7 +369,7 @@
                 </div>
 
 
-                <div class="hero__video-link">
+                <div class="hero__video-link" data-video-url="path/to/video.mp4">
 
                     <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="23" cy="23" r="22.5" fill="#00308C" stroke="#9AF95F" />
@@ -1660,6 +1660,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </script>
 
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">Видео</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Видео элемент -->
+          <video id="videoPlayer" class="w-100" controls>
+            <source id="videoSource" src="" type="video/mp4">
+            Ваш браузер не поддерживает видео тег.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
 <!-- Modal новости -->
 <div class="modal fade news-modal" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -1698,6 +1719,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 </script>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+      var videoPlayer = document.getElementById('videoPlayer');
+      var videoSource = document.getElementById('videoSource');
+      
+      document.querySelector('.hero__video-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        var videoUrl = this.getAttribute('data-video-url');
+        videoSource.src = videoUrl;
+        videoPlayer.load(); // Загружаем новое видео
+        videoModal.show(); // Показываем модальное окно
+      });
+  
+      // Очищаем видео источник при закрытии модального окна
+      document.getElementById('videoModal').addEventListener('hidden.bs.modal', function() {
+        videoPlayer.pause(); // Останавливаем воспроизведение видео
+        videoSource.src = ''; // Очищаем источник видео
+      });
+    });
+  </script>
 
 
 </body>

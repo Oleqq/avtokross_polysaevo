@@ -111,3 +111,13 @@ ul {
 .fancybox__toolbar, .fancybox__thumbs {
     display: none;
 }
+
+.modal {
+    .modal-title {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+    }
+    .btn-close {
+        opacity: 1;
+    }
+}

@@ -464,6 +464,14 @@ ul {
   display: none;
 }
 
+.modal .modal-title {
+  text-transform: uppercase;
+  font-family: var(--font-family);
+}
+.modal .btn-close {
+  opacity: 1;
+}
+
 @keyframes slideme {
   0% {
     left: -30px;
@@ -695,8 +703,8 @@ ul {
 .hero__logo {
   width: fit-content;
   position: absolute;
-  right: 52px;
-  top: 52px;
+  right: 20px;
+  top: 24px;
   z-index: 120;
 }
 @media (max-width: 1199px) {
@@ -750,15 +758,15 @@ ul {
 }
 @media (max-width: 768px) {
   .hero__img--main {
-    width: 350px;
-    top: 19%;
-    right: 29%;
+    width: 350px !important;
+    top: 19% !important;
+    right: 29% !important;
   }
 }
 @media (max-width: 568px) {
   .hero__img--main {
-    top: 16%;
-    right: 21%;
+    top: 16% !important;
+    right: 21% !important;
   }
 }
 @media (max-width: 468px) {
@@ -778,11 +786,6 @@ ul {
     width: 567px;
     height: 279px;
     top: 22%;
-  }
-}
-@media (max-height: 800px) {
-  .hero__img--main {
-    right: 35%;
   }
 }
 .hero__img--bg {
@@ -856,10 +859,15 @@ ul {
     top: 11%;
   }
 }
+@media (max-width: 374px) {
+  .hero__img--bg.mobile {
+    left: -4%;
+  }
+}
 .hero__blob--1 {
   position: absolute;
   top: 0;
-  right: -44px;
+  right: -64px;
   z-index: 110;
 }
 @media (max-width: 1199px) {
@@ -880,7 +888,7 @@ ul {
 }
 .hero__blob--2 {
   position: absolute;
-  left: 0;
+  left: -52px;
   bottom: -200px;
   z-index: 10;
 }
@@ -929,7 +937,7 @@ ul {
 }
 .hero__date {
   position: absolute;
-  left: -100px;
+  left: -52px;
   bottom: 66%;
   z-index: 110;
   display: flex;
@@ -1024,6 +1032,11 @@ ul {
     font-size: 32px;
   }
 }
+@media (max-width: 374px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+}
 .hero .cta-button {
   position: absolute;
   bottom: 25.5%;
@@ -1031,7 +1044,7 @@ ul {
   left: 0;
   right: 0;
   width: fit-content;
-  z-index: 10;
+  z-index: 140;
 }
 @media (max-width: 1660px) {
   .hero .cta-button {
@@ -1040,7 +1053,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .hero .cta-button {
-    bottom: 27.5%;
+    bottom: 35.5%;
   }
 }
 @media (max-width: 1099px) {
@@ -1079,8 +1092,13 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bottom: 15%;
+    bottom: 15% !important;
     gap: 24px;
+  }
+}
+@media (max-height: 899px) {
+  .hero__tips {
+    bottom: 42px;
   }
 }
 .hero__tips--tip {
@@ -1130,8 +1148,9 @@ ul {
   display: flex;
   gap: 24px;
   z-index: 120;
+  cursor: pointer;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1280px) {
   .hero__video-link {
     margin: 0;
     width: 100%;
@@ -1140,10 +1159,38 @@ ul {
     bottom: 160px;
   }
 }
+@media (max-height: 700px) {
+  .hero__video-link {
+    bottom: 138px;
+  }
+}
 @media (max-width: 768px) {
   .hero__video-link {
-    bottom: 6%;
+    bottom: 6% !important;
   }
+}
+.hero__video-link:hover {
+  transition: 0.2s ease;
+}
+.hero__video-link:hover p {
+  transition: 0.2s ease;
+  color: #9AF95F;
+}
+.hero__video-link:hover svg {
+  transition: 0.2s ease;
+  transform: scale(1.2);
+}
+.hero__video-link:hover svg circle {
+  transition: 0.2s ease;
+  fill: rgb(154, 249, 95);
+}
+.hero__video-link:hover svg path {
+  transition: 0.2s ease;
+  stroke: #0038a5;
+  fill: #0038a5;
+}
+.hero__video-link svg {
+  transition: 0.2s ease;
 }
 .hero__video-link p {
   font-family: var(--second-family);
@@ -1152,6 +1199,7 @@ ul {
   letter-spacing: 0.01em;
   text-align: left;
   color: #b3b3b3;
+  transition: 0.2s ease;
   margin: 0;
 }
 
@@ -1261,6 +1309,11 @@ ul {
   position: relative;
   bottom: -100px;
   z-index: 50;
+}
+@media (max-width: 567px) {
+  .about-index__img {
+    bottom: -24px;
+  }
 }
 .about-index__img img {
   width: 100%;
@@ -1798,6 +1851,11 @@ ul {
     right: 14%;
   }
 }
+@media (max-width: 374px) {
+  .gallery-index__block--mark {
+    top: -13%;
+  }
+}
 @media (max-width: 1280px) {
   .gallery-index__block--mark svg {
     width: 150px;
@@ -1835,6 +1893,11 @@ ul {
     left: -20%;
   }
 }
+@media (max-width: 374px) {
+  .gallery-index__block--wing-left {
+    left: -24%;
+  }
+}
 @media (max-width: 1280px) {
   .gallery-index__block--wing-left svg {
     width: 150px;
@@ -1870,6 +1933,11 @@ ul {
 @media (max-width: 567px) {
   .gallery-index__block--wing-right {
     right: -20%;
+  }
+}
+@media (max-width: 374px) {
+  .gallery-index__block--wing-right {
+    right: -24%;
   }
 }
 @media (max-width: 1280px) {

@@ -225,8 +225,8 @@
     &__logo {
         width: fit-content;
         position: absolute;
-        right: 52px;
-        top: 52px;
+        right: 20px;
+        top: 24px;
 
         z-index: 120;
 
@@ -283,13 +283,13 @@
                 
             }
             @media (max-width:768px) {
-                width: 350px;
-                top: 19%;
-                right: 29%;
+                width: 350px !important;
+                top: 19% !important;
+                right: 29% !important;
             }
             @media (max-width:568px) {
-                top: 16%;
-                right: 21%;
+                top: 16% !important;
+                right: 21% !important;
             }
             @media (max-width:468px) {
                 width: 300px !important;
@@ -310,9 +310,9 @@
                 height: 279px;
                 top: 22%;
             }
-            @media (max-height:800px) {
-                right: 35%;
-            }
+            // @media (max-height:800px) {
+            //     right: 35%;
+            // }
         }
 
         &--bg {
@@ -381,6 +381,9 @@
                     left: 9%;
                     top: 11%;
                 }
+                @media (max-width:374px) {
+                    left: -4%;
+                }
             }
         }
     }
@@ -390,7 +393,7 @@
         &--1 {
             position: absolute;
             top: 0;
-            right: -44px;
+            right: -64px;
 
             z-index: 110;
 
@@ -420,7 +423,7 @@
 
         &--2 {
             position: absolute;
-            left: 0;
+            left: -52px;
             bottom: -200px;
             z-index: 10;
 
@@ -471,7 +474,7 @@
 
     &__date {
         position: absolute;
-        left: -100px;
+        left: -52px;
         bottom: 66%;
 
         z-index: 110;
@@ -584,6 +587,9 @@
         @media (max-width:390px) {
             font-size: 32px;
         }
+        @media (max-width:374px) {
+            font-size: 26px;
+        }
 
 
         // @media (max-height:899px) {
@@ -598,13 +604,13 @@
         left: 0;
         right: 0;
         width: fit-content;
-        z-index: 10;
+        z-index: 140;
 
         @media (max-width:1660px) {
             bottom: 32.5%;
         }
         @media (max-width:1199px) {
-            bottom: 27.5%;
+            bottom: 35.5%;
         }
         @media (max-width:1099px) {
             bottom: 48.5%;
@@ -642,9 +648,13 @@
             align-items: center;
             justify-content: center;
 
-            bottom: 15%;
+            bottom: 15% !important;
 
             gap: 24px;
+        }
+
+        @media (max-height:899px) {
+            bottom: 42px;
         }
 
 
@@ -709,15 +719,50 @@
             gap: 24px;
             z-index: 120;
 
-            @media (max-width:1380px) {
+            cursor: pointer;
+
+            @media (max-width:1280px) {
                 margin: 0;
                 width: 100%;
                 right: 0;
                 justify-content: center;
                 bottom: 160px;
             }
+            @media (max-height:700px) {
+                bottom: 138px;
+            }
             @media (max-width:768px) {
-                bottom: 6%;
+                bottom: 6% !important;
+            }
+
+            &:hover {
+                transition: .2s ease;
+                p {
+                    transition: .2s ease;
+                    color: #9AF95F;
+                    
+                }
+
+                svg {
+                    transition: .2s ease;
+                    transform: scale(1.2);
+
+                    circle {
+                        transition: .2s ease;
+                        fill: rgb(154, 249, 95);
+
+                    }
+
+                    path {
+                        transition: .2s ease;
+                        stroke: #0038a5;
+                        fill: #0038a5;
+                    }
+                }
+            }
+            
+            svg {
+                transition: .2s ease;
             }
 
             p {
@@ -727,6 +772,8 @@
                 letter-spacing: 0.01em;
                 text-align: left;
                 color: #b3b3b3;
+
+                transition: .2s ease;
 
                 margin: 0;
             }
@@ -870,6 +917,10 @@
         bottom: -100px;
 
         z-index: 50;
+
+        @media (max-width:567px) {
+            bottom: -24px;
+        }
 
         img {
             width: 100%;
@@ -1545,6 +1596,9 @@
                 top: -9%;
                 right: 14%;
             }
+            @media (max-width:374px) {
+                top: -13%;
+            }
 
             svg {
                 @media (max-width:1280px) {
@@ -1578,6 +1632,9 @@
                 @media (max-width:567px) {
                     left: -20%;
                 }
+                @media (max-width:374px) {
+                    left: -24%;
+                }
 
                 svg {
                     @media (max-width:1280px) {
@@ -1607,6 +1664,9 @@
                 }
                 @media (max-width:567px) {
                     right: -20%;
+                }
+                @media (max-width:374px) {
+                    right: -24%;
                 }
 
                 svg {
